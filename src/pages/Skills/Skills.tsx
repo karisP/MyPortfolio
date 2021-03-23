@@ -1,8 +1,9 @@
 import * as React from 'react';
+import styles from './Skills.module.css';
 
 const Skills = () => {
     return(
-        <div>Skills</div>
+        <div className={styles.container}></div>
     )
 }
 
