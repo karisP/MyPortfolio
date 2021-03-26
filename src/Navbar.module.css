@@ -35,6 +35,7 @@
     background: rgba(107, 112, 83, 0.9);
     width: 100vw;
     height: 100vh;
+    z-index: 1;
 }
 
 .mobile-menu div {
@@ -78,7 +79,7 @@
     .desktop-menu{
         display: flex;
     }
-    
+
     .container a {
         padding: 15px 30px;
         color: white;
