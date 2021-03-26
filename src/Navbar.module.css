@@ -1,18 +1,95 @@
-.container{
+.container {
     display: flex;
     position: absolute;
-    margin: 20px;
+
+}
+.desktop-menu {
+    display: none;
 }
 
-.container a{
-    padding: 15px 30px;
+.header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.header div {
+    padding-left: 10px; 
+    font-size: 24px;
+    color:rgba(107, 112, 83);
+}
+
+.header button {
+    background: transparent;
+    border: none;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: rgba(107, 112, 83, 0.9);
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-menu div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.mobile-menu a {
     color: white;
     text-decoration: none;
-    border-radius: 4px 4px 0px 0px;
-    background-color: #6B7053;
-    margin-right: 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.container a:hover, .container .selected {
-    background-color: #D3AB8B;
+.mobile-menu a:hover {
+    color: #D3AB8B;
+
+}
+
+.mobile-menu button {
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+}
+
+
+@media screen and (min-width: 1024px){
+    .container {
+        display: flex;
+        position: absolute;
+        margin: 20px;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .desktop-menu{
+        display: flex;
+    }
+    
+    .container a {
+        padding: 15px 30px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px 4px 0px 0px;
+        background-color: #6B7053;
+        margin-right: 20px;
+    }
+    
+    .container a:hover, .container .selected {
+        background-color: #D3AB8B;
+    }
+
 }
