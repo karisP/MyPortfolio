@@ -31,7 +31,7 @@ const Navbar = () => {
                     <div className={styles['mobile-menu']}>
                         <button onClick={onToggleMenu}><img src={close} alt="close" /></button>
                         <div>
-                            <NavLink to="/home" activeClassName={styles.selected}>Home</NavLink>
+                            <NavLink exact to="/" activeClassName={styles.selected}>Home</NavLink>
                             <NavLink to="/projects" activeClassName={styles.selected}>Projects</NavLink>
                             <NavLink to="/bio" activeClassName={styles.selected}>Bio</NavLink>
                             <NavLink to="/skills" activeClassName={styles.selected}>Skills</NavLink>
@@ -40,7 +40,7 @@ const Navbar = () => {
                     </div> : null
             }
             <div className={styles['desktop-menu']}>
-                            <NavLink to="/home" activeClassName={styles.selected}>Home</NavLink>
+                            <NavLink exact to="/" activeClassName={styles.selected}>Home</NavLink>
                             <NavLink to="/projects" activeClassName={styles.selected}>Projects</NavLink>
                             <NavLink to="/bio" activeClassName={styles.selected}>Bio</NavLink>
                             <NavLink to="/skills" activeClassName={styles.selected}>Skills</NavLink>

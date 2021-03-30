@@ -7,18 +7,18 @@ const Projects = () => {
             <div>
             <div>
                 <p>For Work</p>
-                <div className={styles.acd}></div>
-                <div className={styles.brushwatson}></div>
-                <div className={styles.zbox}></div>
+                <a href="http://acdmail.com/" target="blank"><div className={styles.acd}></div></a>
+                <a href="http://brushwatson.com/" target="blank"><div className={styles.brushwatson}></div></a>
+                <a href="https://www.zbox.com/" target="blank"><div className={styles.zbox}></div></a>
             </div>
             <div>
                 <p>For School</p>
-                <div className={styles.planimal}></div>
+                <a href="https://planimal-app.herokuapp.com/#!/home" target="blank"><div className={styles.planimal}></div></a>
                 <div></div>
             </div>
             <div>
                 <p>For Fun</p>
-                <div className={styles.guesshoot}></div>
+                <a href="https://guess-hoot.herokuapp.com/" target="blank"><div className={styles.guesshoot}></div></a>
                 <div></div>
             </div>
             </div>
