@@ -19,13 +19,22 @@
 .container > div > div {
     overflow-wrap: break-word;
     align-items: flex-start;
-    padding: 15px;
     width: 250px;
     margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.79);
     border-radius: 10px;
+    padding: 20px 35px;
+}
+.container > div > div > div:first-child {
+    margin-bottom: 10px;
 }
 
+.container > div > div > div:last-child {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* padding: 0px 35px 35px 35px; */
+}
 .container > p {
     font-size: 36px;
     color: white;
@@ -44,7 +53,7 @@
     }
 
     .container > div > div {
-        width: 20%;
-        height: 50vh;
+        width: 17%;
+        height: 40vh;
     }
 }

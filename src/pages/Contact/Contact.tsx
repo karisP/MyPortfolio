@@ -6,18 +6,20 @@ const Contact = () => {
         <div className={styles.container}>
             <div>
                 <div>
-                    <p>Github</p>
-                    <div>Work Account</div>
-                    <div>https://github.com/karisP</div>
-                    <div>Personal Account</div>
-                    <div>https://github.com/karisP</div>
+                    <div>Github</div>
+                    <div>
+                        <div>Work Account</div>
+                        <a href="https://github.com/KP-zbox">https://github.com/KP-zbox</a>
+                        <div>Personal Account</div>
+                        <a href="https://github.com/karisP">https://github.com/karisP</a>
+                    </div>
                 </div>
                 <div>
-                    <p>LinkedIn</p>
-                    <div>https://www.linkedin.com/in/karissaphillips/</div>
+                    <div>LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/karissaphillips/">https://www.linkedin.com/in/karissaphillips/</a>
                 </div>
                 <div>
-                    <p>Email</p>
+                    <div>Email</div>
                     <div>kpdevelopment313@gmail.com</div>
                 </div>
             </div>

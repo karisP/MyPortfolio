@@ -5,38 +5,38 @@ const Skills = () => {
     return (
         <div className={styles.container}>
             <div>
-            <div>
-                <p>Work Experience</p>
-                <ul>
-                    <li>React.js</li>
-                    <li>Typescript</li>
-                    <li>Sass</li>
-                    <li>GraphQL</li>
-                    <li>.NET</li>
-                    <li>Figma Design</li>
-                    <li>Visual Studio</li>
-                </ul>
-            </div>
-            <div>
-                <p>School Experience</p>
-                <ul>
-                    <li>Angular</li>
-                    <li>Javascript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>SQL</li>
-                    <li>Github</li>
-                </ul>
-            </div>
-            <div>
-                <p>Personal Interest</p>
-                <ul>
-                    <li>Android Studio</li>
-                    <li>React Native</li>
-                </ul>
-            </div>
+                <div>
+                    <div>Work Experience</div>
+                    <div>
+                        <span>*React.js</span>
+                        <span>*Typescript</span>
+                        <span>*Sass</span>
+                        <span>*GraphQL</span>
+                        <span>*.NET</span>
+                        <span>*Figma Design</span>
+                        <span>*Visual Studio</span>
+                    </div>
+                </div>
+                <div>
+                    <div>School Experience</div>
+                    <div>
+                        <span>*Angular</span>
+                        <span>*Javascript</span>
+                        <span>*HTML</span>
+                        <span>*CSS</span>
+                        <span>*Node</span>
+                        <span>*Express</span>
+                        <span>*SQL</span>
+                        <span>*Github</span>
+                    </div>
+                </div>
+                <div>
+                    <div>Personal Interest</div>
+                    <div>
+                        <span>*Android Studio</span>
+                        <span>*React Native</span>
+                    </div>
+                </div>
             </div>
         </div>
     )
