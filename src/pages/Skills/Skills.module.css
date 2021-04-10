@@ -7,6 +7,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 26px;
 }
 
 .container > div {
@@ -25,6 +26,8 @@
 
 .container > div > div > div:first-child {
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .container > div > div > div:last-child {

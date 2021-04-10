@@ -8,6 +8,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 26px;
 }
 
 .container > div {
@@ -27,6 +28,8 @@
 }
 .container > div > div > div:first-child {
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .container > div > div > div:last-child {
@@ -35,6 +38,10 @@
     text-align: left;
     /* padding: 0px 35px 35px 35px; */
 }
+.container a {
+    margin-bottom: 10px;
+}
+
 .container > p {
     font-size: 36px;
     color: white;
