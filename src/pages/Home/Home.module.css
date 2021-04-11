@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 36px;
+    justify-content: center;
 }
 
 .container .image {
@@ -19,77 +19,56 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* margin-bottom: 50px; */
-
-}
-
-.container > div:first-of-type {
-    display: flex;
-    margin-top: 80px;
-}
-
-.container div:first-child span:first-child {
-    font-weight: 500;
-    margin: 0px 40px 0px 0px;
-}
-
-.container div:first-child span:nth-child(2) {
-    font-weight: 500;
-    margin: 40px 70px 0px 0px;
-}
-
-.container div:first-child span:nth-child(3) {
-    font-weight: 500;
-    margin: 80px 0px 0px 0px;
 }
 
 .container .name{
     display: flex;
     flex-direction: column;
-    color: #B97E70;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
+
+.container .name span:first-child {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.container .name span:nth-child(2) {
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.container .name span:nth-child(3) {
+    font-size: 36px;
+}
+
 
 @media screen and (min-width: 1024px){
     .container {
+        flex-direction: row-reverse;
         font-size: 48px;
     }
 
-    .container > div:first-child {
-        position: absolute;
-        left: 10%;
-        top: 25%;
+    .container .name {
+        margin-bottom: 0px;
     }
 
     .container div:first-child span:first-child {
-        margin: 0px 18px 0px 0px;
+        font-size: 48px;
     }
 
     .container div:first-child span:nth-child(2) {
-        margin: 95px 45px 0px 0px;
+        font-size: 96px;
     }
 
     .container div:first-child span:nth-child(3) {
-        margin: 190px 0px 0px 0px;
+        font-size: 64px;
     }
     
     .container .image {
         width: 350px;
         height: 350px;
-        margin-bottom: 60px;
+        margin-right: 50px;
     }
     
-    .container > div:last-child {
-        position: absolute;
-        right: 8%;
-        top: 50%;
-        transform: translate(-8%, -50%);
-
-    }
-}
-
-@media screen and (min-width: 1440px){
-    .container > div:first-child {
-        left: 25%;
-        top: 25%;
-    }
 }
