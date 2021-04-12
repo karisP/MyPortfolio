@@ -24,15 +24,30 @@
     font-size: 18px;
 }
 
-.acd {
-    background: url(../../images/brushwatson.svg);
+.container a {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 300px;
     height: 150px;
     margin-bottom: 20px;
     position: relative;
+}
+
+.acd {
+    background: url(../../images/brushwatson.svg);
+}
+
+.brushwatson {
+    background: url(../../images/acd.svg);
+}
+
+.planimal {
+    background: url(../../images/planimalapp.svg);
+}
+
+.guesshoot {
+    background: url(../../images/guesshoot.svg);
 }
 
 .acd div, .brushwatson div, .guesshoot div, .planimal div {
@@ -52,55 +67,11 @@
     text-decoration: underline;
 }
 
-.brushwatson {
-    background: url(../../images/acd.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 150px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-
-.zbox {
-    background: url(../../images/zbox.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 150px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.planimal {
-    background: url(../../images/planimalapp.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 150px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.guesshoot {
-    background: url(../../images/guesshoot.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 150px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
 @media screen and (min-width: 1024px){
     .container {
         height: 100vh;
     }
+    
     .container > div {
         margin-top: 100px;
         flex-direction: row;
