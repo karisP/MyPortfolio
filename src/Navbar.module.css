@@ -51,9 +51,8 @@
     margin-bottom: 20px;
 }
 
-.mobile-menu a:hover {
-    color: #D3AB8B;
-
+.mobile-menu .selected {
+    text-decoration: underline;
 }
 
 .mobile-menu button {
@@ -63,7 +62,6 @@
     right: 10px;
     border: none;
 }
-
 
 @media screen and (min-width: 1024px){
     .container {

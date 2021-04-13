@@ -8,13 +8,21 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 16px;
+    font-size: 14px;
+    padding-top: 60px;
 }
 
 .container div {
     max-width: 400px;
-    width: 90%;
     background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
+    padding: 20px;
+    margin: 0px 20px;
     border-radius: 50px;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        padding-top: 0px;
+        font-size: 16px;
+    }
 }
