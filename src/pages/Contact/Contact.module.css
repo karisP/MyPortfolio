@@ -43,7 +43,8 @@
 }
 
 .container > p {
-    font-size: 36px;
+    font-size: 24px;
+    margin: 20px;
     color: white;
 }
 
@@ -62,5 +63,10 @@
     .container > div > div {
         width: 17%;
         height: 40vh;
+    }
+
+    .container p {
+        font-size: 36px;
+        margin-top: 100px;
     }
 }

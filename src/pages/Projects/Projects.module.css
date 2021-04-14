@@ -62,11 +62,6 @@
     color: white;
 }
 
-.acd:hover div, .brushwatson:hover div, .guesshoot:hover div, .planimal:hover div {
-    visibility: visible;
-    text-decoration: underline;
-}
-
 @media screen and (min-width: 1024px){
     .container {
         height: 100vh;
@@ -77,5 +72,10 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: flex-start;
+    }
+    
+    .acd:hover div, .brushwatson:hover div, .guesshoot:hover div, .planimal:hover div {
+        visibility: visible;
+        text-decoration: underline;
     }
 }

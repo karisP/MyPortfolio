@@ -9,15 +9,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 14px;
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 
 .container div {
     max-width: 400px;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    margin: 0px 20px;
-    border-radius: 50px;
+    margin: 80px 20px 20px 20px;
+    border-radius: 10px;
+    height: fit-content;
 }
 
 @media screen and (min-width: 768px){
