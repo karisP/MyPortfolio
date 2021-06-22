@@ -50,7 +50,11 @@
     background: url(../../images/guesshoot.svg);
 }
 
-.acd div, .brushwatson div, .guesshoot div, .planimal div {
+.apple {
+    background: url(../../images/apple.png);
+}
+
+.acd div, .brushwatson div, .guesshoot div, .planimal div, .apple div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +78,7 @@
         align-items: flex-start;
     }
     
-    .acd:hover div, .brushwatson:hover div, .guesshoot:hover div, .planimal:hover div {
+    .acd:hover div, .brushwatson:hover div, .guesshoot:hover div, .planimal:hover div, .apple:hover div {
         visibility: visible;
         text-decoration: underline;
     }
