@@ -40,6 +40,11 @@
 }
 .container a {
     margin-bottom: 10px;
+    color: purple;
+}
+
+.container a:hover {
+    color: #6B7053;
 }
 
 .container > p {
