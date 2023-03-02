@@ -14,6 +14,11 @@ const Skills = () => {
                         <span>*.NET</span>
                         <span>*Figma Design</span>
                         <span>*Visual Studio</span>
+                        <span>*React Material UI</span>
+                        <span>*React Testing Library</span>
+                        <span>*Storybook</span>
+                        <span>*Swagger</span>
+                        <span>*Agile Development</span>
                     </div>
                 </div>
                 <div>
@@ -27,13 +32,6 @@ const Skills = () => {
                         <span>*Express</span>
                         <span>*SQL</span>
                         <span>*Github</span>
-                    </div>
-                </div>
-                <div>
-                    <div>Personal Interest</div>
-                    <div>
-                        <span>*Android Studio</span>
-                        <span>*React Native</span>
                     </div>
                 </div>
             </div>
