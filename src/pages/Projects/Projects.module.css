@@ -42,9 +42,9 @@
     background: url(../../images/acd.svg);
 }
 
-/* .youthup {
+.youthup {
     background: url(../../images/youthup.svg);
-} */
+}
 
 .guesshoot {
     background: url(../../images/guesshoot.svg);
@@ -58,7 +58,11 @@
     background: url(../../images/avengers.svg);
 }
 
-.acd div, .brushwatson div, .guesshoot div, .planimal div, .apple div, .avengers div {
+.pomodoro {
+    background: url(../../images/pompomodoro.svg);
+}
+
+.acd div, .brushwatson div, .guesshoot div, .planimal div, .apple div, .avengers div, .pomodoro div, .youthup div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +86,7 @@
         align-items: flex-start;
     }
     
-    .acd:hover div, .brushwatson:hover div, .guesshoot:hover div, .planimal:hover div, .apple:hover div, .avengers:hover div {
+    .acd:hover div, .brushwatson:hover div, .guesshoot:hover div, .planimal:hover div, .apple:hover div, .avengers:hover div, .youthup:hover div, .pomodoro:hover div {
         visibility: visible;
         text-decoration: underline;
     }
