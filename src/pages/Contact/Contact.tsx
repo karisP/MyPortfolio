@@ -7,8 +7,6 @@ const Contact = () => {
                 <div>
                     <div>Github</div>
                     <div>
-                        <div>Work Account</div>
-                        <a href="https://github.com/KP-zbox">https://github.com/KP-zbox</a>
                         <div>Personal Account</div>
                         <a href="https://github.com/karisP">https://github.com/karisP</a>
                     </div>
