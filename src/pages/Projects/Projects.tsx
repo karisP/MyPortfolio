@@ -13,8 +13,8 @@ const Projects = () => {
             <div>
                 <p>For Fun</p>
                 <a className={styles.guesshoot} href="https://guess-hoot.herokuapp.com/" target="blank"><div>Made with React and Typescript</div></a>
-                <a className={styles.apple} href="https://apple-doppelganger.herokuapp.com/" target="blank"><div>Made with React and Typescript</div></a>
-                <a className={styles.pomodoro} href="https://pompomodoro.herokuapp.com/" target="blank"><div>Made with React & Reddit API</div></a>
+                <a className={styles.apple} href="https://apple-clone-dc458.web.app/" target="blank"><div>Made with React and Typescript</div></a>
+                <a className={styles.pomodoro} href="https://pom-pomodoro.web.app/" target="blank"><div>Made with React & Reddit API</div></a>
             </div>
             </div>
         </div>
