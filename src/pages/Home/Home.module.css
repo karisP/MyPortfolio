@@ -44,6 +44,24 @@
     font-size: 24px;
 }
 
+.container button {
+    width: 241px;
+    height: 52px;
+    border-radius: 12px;
+    border: none;
+    background-color: black;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.container .name button {
+    display: none;
+}
+
 
 @media screen and (min-width: 1024px){
     .container {
@@ -52,8 +70,22 @@
         padding: 24px;
     }
 
+    .container button {
+        display: none;
+    }
+
     .container .name {
         margin-bottom: 0px;
+    }
+
+    .container .name button {
+        display: block;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .container .name button:hover {
+        font-weight: 600;
     }
 
     .container div:first-child span:first-child {

@@ -1,4 +1,5 @@
 import styles from "./Home.module.css";
+import resume from "../../assets/KarissaPhillipsResume.pdf";
 
 const Home = () => {
   return (
@@ -7,10 +8,26 @@ const Home = () => {
         <span>Hi, I'm</span>
         <span>Karissa Phillips</span>
         <span>Frontend Engineer & Mentor</span>
+        <button
+          id="desktop"
+          type="submit"
+          onClick={() => window.open(resume)}
+          value="KarissaPhillipsResume"
+        >
+          Download My CV
+        </button>
       </div>
       <div>
         <div className={styles.image}></div>
       </div>
+      <button
+        id="mobile"
+        type="submit"
+        onClick={() => window.open(resume)}
+        value="KarissaPhillipsResume"
+      >
+        Download My CV
+      </button>
     </div>
   );
 };
