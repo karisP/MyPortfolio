@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    background: rgba(107, 112, 83, 0.9);
+    background: rgba(0,0,0, 0.7);
     width: 100vw;
     height: 100vh;
     z-index: 1;
@@ -68,6 +68,7 @@
         display: flex;
         position: absolute;
         margin: 20px;
+        right: 0;
     }
 
     .header{
@@ -80,15 +81,17 @@
 
     .container a {
         padding: 15px 30px;
-        color: white;
+        color: #000000;
         text-decoration: none;
         border-radius: 4px 4px 0px 0px;
-        background-color: #6B7053;
+        border: 1px solid #000000;
+        background-color: #ffffff;
         margin-right: 20px;
     }
     
     .container a:hover, .container .selected {
-        background-color: #D3AB8B;
+        background-color: #000000;
+        color: #ffffff;
     }
 
 }
