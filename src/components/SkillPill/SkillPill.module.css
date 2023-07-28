@@ -1,0 +1,9 @@
+.container {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #70C1B3;
+    min-width: 65px;
+    margin: 4px;
+    padding: 6px 8px;
+}

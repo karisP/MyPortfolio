@@ -1,4 +1,5 @@
 import { ProjectData } from "../../pages/Projects/data";
+import SkillPill from "../SkillPill/SkillPill";
 import styles from "./Project.module.css";
 
 const Project = ({ title, image, link, skills }: ProjectData) => {
@@ -10,9 +11,13 @@ const Project = ({ title, image, link, skills }: ProjectData) => {
   return (
     <a className={styles.container} href={link}>
       <div className={styles.image} style={divStyle} />
-      <div>
+      <div className={styles.content}>
         <p>{title}</p>
-        <div className={styles.skills}></div>
+        <div className={styles.skills}>
+          {skills.map((s) => (
+            <SkillPill text={s} />
+          ))}
+        </div>
       </div>
     </a>
   );
