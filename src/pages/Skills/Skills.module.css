@@ -1,54 +1,54 @@
 .container{
-    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background: url(../../images/skillsbackground.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 26px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
-.container > div {
+.container .wrapper {
     display: flex;
-    flex-direction: column;
-    margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 296px;
+    width: 318px;
+    position: relative;
 }
 
-.container > div > div {
-    width: 250px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.79);
-    border-radius: 10px;
-    padding: 20px 35px;
+.container .wrapper div {
+    height: 17px;
+    width: 80px;
 }
 
-.container > div > div > div:first-child {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 18px;
+.container .wrapper div:nth-child(3n-1){
+    background-color: #FFE066;
 }
 
-.container > div > div > div:last-child {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.container .wrapper div:nth-child(3n){
+    background-color: #F25F5C;
+}
+
+.container .topVector {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -28px;
+    top: -27px;
+    transform: rotate(46deg);
+}
+
+.container .bottomVector {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -19px;
+    bottom: -26px;
+    transform: rotate(-119deg);
 }
 
 @media screen and (min-width: 1024px){
     .container {
         height: 100vh;
-    }
-
-    .container > div {
-        width: 100%;
-        margin-top: 100px;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .container > div > div {
-        width: 17%;
-        height: 50vh;
     }
 }
