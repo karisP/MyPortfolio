@@ -9,7 +9,12 @@ const Project = ({ title, image, link, skills }: ProjectData) => {
     backgroundPosition: "center",
   };
   return (
-    <a className={styles.container} href={link}>
+    <a
+      className={styles.container}
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+    >
       <div className={styles.image} style={divStyle} />
       <div className={styles.content}>
         <p>{title}</p>
