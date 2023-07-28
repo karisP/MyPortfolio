@@ -1,3 +1,10 @@
+import brushwatson from "../../images/brushwatson.svg";
+import acd from "../../images/acd.svg";
+import youthup from "../../images/youthup.svg";
+import guesshoot from "../../images/guesshoot.svg";
+import apple from "../../images/apple.png";
+import pom from "../../images/pompomodoro.svg";
+
 export type ProjectData = {
   title: string;
   image: string;
@@ -8,37 +15,37 @@ export type ProjectData = {
 const projectData: ProjectData[] = [
   {
     title: "Real Estate Landing Page",
-    image: "../../images/brushwatson.svg",
+    image: brushwatson,
     skills: [],
-    link: "http://brushwatson.com/",
+    link: "https://web.archive.org/web/20211128104758/https://www.brushwatson.com/",
   },
   {
     title: "Real Estate Development Website",
-    image: "../../images/acd.svg",
+    image: acd,
     skills: [],
     link: "http://acdmail.com/",
   },
   {
     title: "Youth Social Services Nonprofit",
-    image: "../../images/youthup.svg",
+    image: youthup,
     skills: [],
     link: "https://dpcyouthup.org/",
   },
   {
     title: "Classic Game with Wizarding Theme",
-    image: "../../images/guesshoot.svg",
+    image: guesshoot,
     skills: [],
     link: "https://guess-hoot.herokuapp.com/",
   },
   {
     title: "Clone of Apple Home Page",
-    image: "../../images/apple.png",
+    image: apple,
     skills: [],
     link: "https://apple-clone-dc458.web.app/",
   },
   {
     title: "Pomodoro Timer",
-    image: "../../images/pompomodoro.svg",
+    image: pom,
     skills: [],
     link: "https://pom-pomodoro.web.app/",
   },
