@@ -14,7 +14,7 @@ const Home = () => {
           onClick={() => window.open(resume)}
           value="KarissaPhillipsResume"
         >
-          Download My CV
+          View My Resume
         </button>
       </div>
       <div>
@@ -26,7 +26,7 @@ const Home = () => {
         onClick={() => window.open(resume)}
         value="KarissaPhillipsResume"
       >
-        Download My CV
+        View My Resume
       </button>
     </div>
   );
