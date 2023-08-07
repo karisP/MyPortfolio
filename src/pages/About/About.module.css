@@ -10,6 +10,52 @@
   margin-top: 60px;
 }
 
+.container .timeline .header,
+.container .connect .header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 100px;
+}
+
+.container .timeline .circle {
+  position: absolute;
+  width: 287px;
+  height: 73px;
+  border: 10px solid #ffe066;
+  border-radius: 50%;
+  rotate: -13deg;
+}
+
+.container .connect h1 {
+  margin: 0 10px;
+}
+
+.container .connect svg {
+  width: 65px;
+  height: 61px;
+  rotate: 163deg;
+}
+
+.container .connect svg path {
+  fill: #70c1b3;
+}
+
+.container .connect .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.container .connect .links a,
+.container .connect .links span {
+  color: #f25f5c;
+  font-weight: 600;
+  font-size: 16px;
+}
 @media screen and (min-width: 1024px) {
   .container {
     height: 100vh;
