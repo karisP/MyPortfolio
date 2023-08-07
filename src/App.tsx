@@ -2,7 +2,7 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
+import Contact from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Navbar from "./Navbar";
 
