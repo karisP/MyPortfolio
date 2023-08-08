@@ -1,6 +1,7 @@
 import Card from "../../components/Card/Card";
 import styles from "./About.module.css";
 import { ReactComponent as Vector } from "../../images/triangle_vectors.svg";
+import MyTimeline from "../../components/Timeline/Timeline";
 
 const About = () => {
   return (
@@ -27,6 +28,7 @@ const About = () => {
           <div className={styles.circle} />
           <h1>Timeline</h1>
         </div>
+        <MyTimeline />
       </section>
       <section className={styles.connect}>
         <div className={styles.header}>
@@ -35,15 +37,19 @@ const About = () => {
           <Vector />
         </div>
         <div className={styles.links}>
-          <a href="https://www.linkedin.com/in/karissaphillips" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/karissaphillips"
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
           <span>&#124;</span>
-          <a href="https://github.com/karisP" target="_blank">
+          <a href="https://github.com/karisP" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <span>&#124;</span>
-          <a href="https://theprecisedev.com/" target="_blank">
+          <a href="https://theprecisedev.com/" target="_blank" rel="noreferrer">
             Blog
           </a>
           <span>&#124;</span>

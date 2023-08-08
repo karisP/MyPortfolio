@@ -9,6 +9,9 @@
 .container section:first-of-type {
   margin-top: 60px;
 }
+.container .timeline {
+  margin-top: 30px;
+}
 
 .container .timeline .header,
 .container .connect .header {
@@ -16,7 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
   height: 100px;
 }
 
