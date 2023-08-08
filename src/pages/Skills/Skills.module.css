@@ -1,111 +1,111 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
 
 .container .wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 296px;
-    width: 318px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 296px;
+  width: 318px;
+  position: relative;
 }
 
 .container .wrapper div {
-    height: 17px;
-    width: 80px;
+  height: 17px;
+  width: 80px;
 }
 
-.container .wrapper div:nth-child(3n-1){
-    background-color: #FFE066;
+.container .wrapper div:nth-child(3n-1) {
+  background-color: #ffe066;
 }
 
-.container .wrapper div:nth-child(3n){
-    background-color: #F25F5C;
+.container .wrapper div:nth-child(3n) {
+  background-color: #f25f5c;
 }
 
 .container .topVector {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: -28px;
-    top: -27px;
-    transform: rotate(46deg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -28px;
+  top: -27px;
+  transform: rotate(46deg);
 }
 
 .container .bottomVector {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right: -19px;
-    bottom: -26px;
-    transform: rotate(-119deg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -19px;
+  bottom: -26px;
+  transform: rotate(-119deg);
 }
 
 @media screen and (min-width: 768px) {
-    .container .wrapper {
-        width: 400px;
-        height: fit-content;
-    }
+  .container .wrapper {
+    width: 400px;
+    height: fit-content;
+  }
 
-    .container .wrapper div {
-        width: 100px;
-        height: 30px;
-        font-size: 16px;
-        margin: 8px;
-    } 
+  .container .wrapper div {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin: 8px;
+  }
 
-    .container .topVector {
-        width: 100px;
-        height: 100px;
-        left: -67px;
-        top: -65px;
-        transform: rotate(52deg);
-    }
-    
-    .container .bottomVector {
-        width: 100px;
-        height: 100px;
-        right: -64px;
-        bottom: -67px;
-        transform: rotate(-119deg);
-    }
+  .container .topVector {
+    width: 100px;
+    height: 100px;
+    left: -67px;
+    top: -65px;
+    transform: rotate(52deg);
+  }
+
+  .container .bottomVector {
+    width: 100px;
+    height: 100px;
+    right: -64px;
+    bottom: -67px;
+    transform: rotate(-119deg);
+  }
 }
 
-@media screen and (min-width: 1024px){
-    .container {
-        height: 100vh;
-    }
-    .container .wrapper {
-        width: 900px;
-        height: fit-content;
-    }
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 100vh;
+  }
+  .container .wrapper {
+    width: 900px;
+    height: fit-content;
+  }
 
-    .container .wrapper div {
-        width: 200px;
-        height: 50px;
-        font-size: 24px;
-        margin: 12px;
-    } 
+  .container .wrapper div {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    margin: 12px;
+  }
 
-    .container .topVector {
-        width: initial;
-        height: initial;
-        left: -25px;
-        top: -117px;
-        transform: rotate(57deg);
-    }
-    
-    .container .bottomVector {
-        width: initial;
-        height: initial;
-        right: -19px;
-        bottom: -126px;
-        transform: rotate(-119deg);
-    }
+  .container .topVector {
+    width: initial;
+    height: initial;
+    left: -25px;
+    top: -117px;
+    transform: rotate(57deg);
+  }
+
+  .container .bottomVector {
+    width: initial;
+    height: initial;
+    right: -19px;
+    bottom: -126px;
+    transform: rotate(-119deg);
+  }
 }

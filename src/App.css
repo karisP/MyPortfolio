@@ -1,12 +1,10 @@
 .App {
   text-align: center;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #FAF9F9;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  background-color: #faf9f9;
 }
 
 .App-link {
   color: #61dafb;
 }
-

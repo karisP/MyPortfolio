@@ -59,8 +59,74 @@
   font-weight: 600;
   font-size: 16px;
 }
+
 @media screen and (min-width: 1024px) {
-  .container {
-    height: 100vh;
+  .container section:first-of-type {
+    margin-top: 120px;
+  }
+
+  .container .cardWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+  }
+
+  .container .connect .links a:hover {
+    color: #70c1b3;
+  }
+
+  .container .connect .links a:active {
+    opacity: 0.7;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container h1 {
+    font-size: 48px;
+  }
+
+  .container .cardWrapper {
+    width: 1200px;
+  }
+
+  .container .timeline .header {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  .container .connect {
+    margin-top: 40px;
+  }
+
+  .container .timeline .circle {
+    width: 577px;
+    height: 141px;
+  }
+
+  .container .connect .header {
+    margin-bottom: 50px;
+  }
+
+  .container .connect h1 {
+    margin: 0 50px;
+  }
+
+  .container .connect svg {
+    width: 174px;
+    height: 158px;
+  }
+
+  .container .connect .links {
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .container .connect .links a {
+    margin: 0 20px;
+    font-size: 28px;
+  }
+
+  .container .connect .links span {
+    font-size: 28px;
   }
 }
