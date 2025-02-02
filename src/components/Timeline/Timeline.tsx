@@ -139,6 +139,16 @@ const MyTimeline = () => {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent>
+            Joins Think Company as a UX Engineer.
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>October 2023</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
             This is where you come in!
           </TimelineOppositeContent>
           <TimelineSeparator>
