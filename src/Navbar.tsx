@@ -1,8 +1,9 @@
 import * as React from "react";
 import styles from "./Navbar.module.css";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import close from "./images/close.svg";
 import menu from "./images/menu.svg";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const history = useHistory();
@@ -13,22 +14,24 @@ const Navbar = () => {
   };
 
   let currentPage = "";
-  if (history.location.pathname === "/projects") {
+  if (history.location.hash === "#projects") {
     currentPage = "Projects";
-  } else if (history.location.pathname === "/skills") {
+  } else if (history.location.hash === "#skills") {
     currentPage = "Skills";
-  } else if (history.location.pathname === "/about") {
+  } else if (history.location.hash === "#about") {
     currentPage = "About";
   }
-  console.log(openMenu, history);
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <button onClick={onToggleMenu}>
+        <div>{currentPage}</div>
+        <button
+          onClick={onToggleMenu}
+          style={openMenu ? { opacity: 0 } : undefined}
+        >
           <img src={menu} alt="menu" />
         </button>
-        <div>{currentPage}</div>
       </div>
       {openMenu ? (
         <div className={styles["mobile-menu"]}>
@@ -36,51 +39,62 @@ const Navbar = () => {
             <img src={close} alt="close" />
           </button>
           <div>
-            <NavLink
-              exact
-              to="/"
-              activeClassName={styles.selected}
-              onClick={() => onToggleMenu()}
+            <HashLink
+              smooth
+              to="/#home"
+              onClick={onToggleMenu}
+              className={
+                history.location.hash === "#home" ? styles.selected : ""
+              }
             >
               Home
-            </NavLink>
-            <NavLink
-              to="/projects"
-              activeClassName={styles.selected}
-              onClick={() => onToggleMenu()}
+            </HashLink>
+            <HashLink
+              smooth
+              to="/#projects"
+              onClick={onToggleMenu}
+              className={
+                history.location.hash === "#projects" ? styles.selected : ""
+              }
             >
               Projects
-            </NavLink>
-            <NavLink
-              to="/skills"
-              activeClassName={styles.selected}
-              onClick={() => onToggleMenu()}
+            </HashLink>
+            <HashLink
+              smooth
+              to="/#skills"
+              onClick={onToggleMenu}
+              className={
+                history.location.hash === "#skills" ? styles.selected : ""
+              }
             >
               Skills
-            </NavLink>
-            <NavLink
-              to="/about"
-              activeClassName={styles.selected}
-              onClick={() => onToggleMenu()}
+            </HashLink>
+            <HashLink
+              smooth
+              to="/#about"
+              onClick={onToggleMenu}
+              className={
+                history.location.hash === "#about" ? styles.selected : ""
+              }
             >
               About
-            </NavLink>
+            </HashLink>
           </div>
         </div>
       ) : null}
       <div className={styles["desktop-menu"]}>
-        <NavLink exact to="/" activeClassName={styles.selected}>
+        <HashLink smooth to="/#home">
           Home
-        </NavLink>
-        <NavLink to="/projects" activeClassName={styles.selected}>
+        </HashLink>
+        <HashLink smooth to="/#projects">
           Projects
-        </NavLink>
-        <NavLink to="/skills" activeClassName={styles.selected}>
+        </HashLink>
+        <HashLink smooth to="/#skills">
           Skills
-        </NavLink>
-        <NavLink to="/about" activeClassName={styles.selected}>
+        </HashLink>
+        <HashLink smooth to="/#about">
           About
-        </NavLink>
+        </HashLink>
       </div>
     </div>
   );

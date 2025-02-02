@@ -5,7 +5,7 @@ import MyTimeline from "../../components/Timeline/Timeline";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <section className={styles.values}>
         <h1>People-First Approach</h1>
         <div className={styles.cardWrapper}>

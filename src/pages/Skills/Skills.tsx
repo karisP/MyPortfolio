@@ -5,7 +5,8 @@ import vector from "../../images/triangle_vectors.svg";
 
 const Skills = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container} id="skills">
+      <h1>Skills</h1>
       <div className={styles.wrapper}>
         {skillsData.map((s) => (
           <SkillPill text={s} />
@@ -13,7 +14,7 @@ const Skills = () => {
         <img src={vector} className={styles.topVector} alt="decoration" />
         <img src={vector} className={styles.bottomVector} alt="decoration" />
       </div>
-    </div>
+    </section>
   );
 };
 

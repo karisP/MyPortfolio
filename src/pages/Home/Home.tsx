@@ -3,7 +3,7 @@ import resume from "../../assets/KarissaPhillipsResume.pdf";
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container} id="home">
       <div className={styles.name}>
         <span>Hi, I'm</span>
         <span>Karissa Phillips</span>
@@ -28,7 +28,7 @@ const Home = () => {
       >
         View My Resume
       </button>
-    </div>
+    </section>
   );
 };
 

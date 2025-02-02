@@ -4,7 +4,8 @@ import projectData from "./data";
 
 const Projects = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container} id="projects">
+      <h1>Projects</h1>
       <div className={styles.wrapper}>
         {projectData.map((p) => (
           <Project
@@ -16,7 +17,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
