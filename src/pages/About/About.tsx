@@ -49,10 +49,6 @@ const About = () => {
             GitHub
           </a>
           <span>&#124;</span>
-          <a href="https://theprecisedev.com/" target="_blank" rel="noreferrer">
-            Blog
-          </a>
-          <span>&#124;</span>
           <a href="mailto: kpdevelopment313@gmail.com">Email</a>
         </div>
       </section>

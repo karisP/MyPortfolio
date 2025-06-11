@@ -56,10 +56,6 @@
   margin-bottom: 20px;
 }
 
-.mobile-menu .selected {
-  text-decoration: underline;
-}
-
 .mobile-menu button {
   background-color: transparent;
   position: absolute;

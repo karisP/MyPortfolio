@@ -19,8 +19,8 @@ const Project = ({ title, image, link, skills }: ProjectData) => {
       <div className={styles.content}>
         <p>{title}</p>
         <div className={styles.skills}>
-          {skills.map((s) => (
-            <SkillPill text={s} />
+          {skills.map((s, index) => (
+            <SkillPill key={index} text={s} />
           ))}
         </div>
       </div>

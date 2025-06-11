@@ -8,24 +8,15 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const history = useHistory();
   const [openMenu, setOpenMenu] = React.useState<boolean>(false);
+  const [currentLink, setCurrentLink] = React.useState<string>("home");
 
   const onToggleMenu = () => {
     setOpenMenu(!openMenu);
   };
 
-  let currentPage = "";
-  if (history.location.hash === "#projects") {
-    currentPage = "Projects";
-  } else if (history.location.hash === "#skills") {
-    currentPage = "Skills";
-  } else if (history.location.hash === "#about") {
-    currentPage = "About";
-  }
-
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div>{currentPage}</div>
         <button
           onClick={onToggleMenu}
           style={openMenu ? { opacity: 0 } : undefined}
@@ -83,16 +74,36 @@ const Navbar = () => {
         </div>
       ) : null}
       <div className={styles["desktop-menu"]}>
-        <HashLink smooth to="/#home">
+        <HashLink
+          className={currentLink === "home" ? styles.selected : ""}
+          onClick={() => setCurrentLink("home")}
+          smooth
+          to="/#home"
+        >
           Home
         </HashLink>
-        <HashLink smooth to="/#projects">
+        <HashLink
+          className={currentLink === "projects" ? styles.selected : ""}
+          onClick={() => setCurrentLink("projects")}
+          to="/#projects"
+          smooth
+        >
           Projects
         </HashLink>
-        <HashLink smooth to="/#skills">
+        <HashLink
+          className={currentLink === "skills" ? styles.selected : ""}
+          onClick={() => setCurrentLink("skills")}
+          to="/#skills"
+          smooth
+        >
           Skills
         </HashLink>
-        <HashLink smooth to="/#about">
+        <HashLink
+          className={currentLink === "about" ? styles.selected : ""}
+          onClick={() => setCurrentLink("about")}
+          to="/#about"
+          smooth
+        >
           About
         </HashLink>
       </div>

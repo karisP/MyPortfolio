@@ -8,8 +8,8 @@ const Skills = () => {
     <section className={styles.container} id="skills">
       <h1>Skills</h1>
       <div className={styles.wrapper}>
-        {skillsData.map((s) => (
-          <SkillPill text={s} />
+        {skillsData.map((s, index) => (
+          <SkillPill key={index} text={s} />
         ))}
         <img src={vector} className={styles.topVector} alt="decoration" />
         <img src={vector} className={styles.bottomVector} alt="decoration" />

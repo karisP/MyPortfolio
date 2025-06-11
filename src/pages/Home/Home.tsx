@@ -7,7 +7,7 @@ const Home = () => {
       <div className={styles.name}>
         <span>Hi, I'm</span>
         <span>Karissa Phillips</span>
-        <span>Frontend Engineer & Mentor</span>
+        <span>User Experience Engineer</span>
         <button
           id="desktop"
           type="submit"
@@ -17,7 +17,7 @@ const Home = () => {
           View My Resume
         </button>
       </div>
-      <div>
+      <div className={styles.imageWrapper}>
         <div className={styles.image}></div>
       </div>
       <button

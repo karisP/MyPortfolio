@@ -13,10 +13,16 @@
   box-sizing: border-box;
 }
 
-.container .image {
+.container .imageWrapper {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.container .image {
+  width: 200px;
+  height: 200px;
   background: url("../../images/profilepicv2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,9 +107,20 @@
     font-size: 40px;
   }
 
+  .container .imageWrapper {
+    width: 350px;
+    height: 350px;
+    margin-right: 16px;
+  }
+
   .container .image {
     width: 350px;
     height: 350px;
     margin-right: 50px;
+  }
+
+  .container .image:hover {
+    transition: all 3s ease-in;
+    transform: rotate(360deg);
   }
 }

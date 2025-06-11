@@ -81,10 +81,17 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container h1 {
+    font-size: 32px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     height: 100vh;
   }
+
   .container .wrapper {
     width: 900px;
     height: fit-content;
@@ -111,5 +118,11 @@
     right: -19px;
     bottom: -126px;
     transform: rotate(-119deg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container h1 {
+    font-size: 48px;
   }
 }
