@@ -7,9 +7,9 @@ const Layout = () => {
   return (
     <main>
       <Home />
-      <Projects />
-      <Skills />
       <About />
+      <Skills />
+      <Projects />
     </main>
   );
 };

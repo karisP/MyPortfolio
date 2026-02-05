@@ -1,5 +1,5 @@
 import styles from "./Home.module.css";
-import resume from "../../assets/KarissaPhillipsResume.pdf";
+import resume from "../../assets/KarissaPhillipsResume2026.pdf";
 
 const Home = () => {
   return (

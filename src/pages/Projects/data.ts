@@ -2,7 +2,7 @@ import brushwatson from "../../images/brushwatson.svg";
 import acd from "../../images/acd.svg";
 import youthup from "../../images/youthup.svg";
 import guesshoot from "../../images/guesshoot.svg";
-import apple from "../../images/apple.png";
+//import apple from "../../images/apple.png";
 import pom from "../../images/pompomodoro.svg";
 
 export type ProjectData = {
@@ -43,12 +43,12 @@ const projectData: ProjectData[] = [
     skills: ["React", "CSS", "TypeScript", "Chatbot", "API", "Animation"],
     link: "https://guess-hoot.herokuapp.com/",
   },
-  {
-    title: "Clone of Apple Home Page",
-    image: apple,
-    skills: ["React", "CSS", "TypeScript", "CSS Animation"],
-    link: "https://apple-clone-dc458.web.app/",
-  },
+  // {
+  //   title: "Clone of Apple Home Page",
+  //   image: apple,
+  //   skills: ["React", "CSS", "TypeScript", "CSS Animation"],
+  //   link: "https://apple-clone-dc458.web.app/",
+  // },
   {
     title: "Pomodoro Timer",
     image: pom,

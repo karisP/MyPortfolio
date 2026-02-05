@@ -139,7 +139,7 @@ const MyTimeline = () => {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent>
-            Joins Think Company as a UX Engineer.
+            Joins Think Company as a UX Engineer Contractor.
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
@@ -148,13 +148,29 @@ const MyTimeline = () => {
           <TimelineContent>October 2023</TimelineContent>
         </TimelineItem>
         <TimelineItem>
+          <TimelineOppositeContent>February 2024</TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>Offered Full-Time Position</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
           <TimelineOppositeContent>
-            This is where you come in!
+            Promoted to Senior UX Engineer
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
+            <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>Future</TimelineContent>
+          <TimelineContent>February 2026</TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>Future</TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+          </TimelineSeparator>
+          <TimelineContent>This is where you come in!</TimelineContent>
         </TimelineItem>
       </Timeline>
     </ThemeProvider>

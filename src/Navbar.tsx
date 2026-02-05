@@ -42,13 +42,13 @@ const Navbar = () => {
             </HashLink>
             <HashLink
               smooth
-              to="/#projects"
+              to="/#about"
               onClick={onToggleMenu}
               className={
-                history.location.hash === "#projects" ? styles.selected : ""
+                history.location.hash === "#about" ? styles.selected : ""
               }
             >
-              Projects
+              About
             </HashLink>
             <HashLink
               smooth
@@ -62,13 +62,13 @@ const Navbar = () => {
             </HashLink>
             <HashLink
               smooth
-              to="/#about"
+              to="/#projects"
               onClick={onToggleMenu}
               className={
-                history.location.hash === "#about" ? styles.selected : ""
+                history.location.hash === "#projects" ? styles.selected : ""
               }
             >
-              About
+              Projects
             </HashLink>
           </div>
         </div>
@@ -83,12 +83,12 @@ const Navbar = () => {
           Home
         </HashLink>
         <HashLink
-          className={currentLink === "projects" ? styles.selected : ""}
-          onClick={() => setCurrentLink("projects")}
-          to="/#projects"
+          className={currentLink === "about" ? styles.selected : ""}
+          onClick={() => setCurrentLink("about")}
+          to="/#about"
           smooth
         >
-          Projects
+          About
         </HashLink>
         <HashLink
           className={currentLink === "skills" ? styles.selected : ""}
@@ -99,12 +99,12 @@ const Navbar = () => {
           Skills
         </HashLink>
         <HashLink
-          className={currentLink === "about" ? styles.selected : ""}
-          onClick={() => setCurrentLink("about")}
-          to="/#about"
+          className={currentLink === "projects" ? styles.selected : ""}
+          onClick={() => setCurrentLink("projects")}
+          to="/#projects"
           smooth
         >
-          About
+          Projects
         </HashLink>
       </div>
     </div>
